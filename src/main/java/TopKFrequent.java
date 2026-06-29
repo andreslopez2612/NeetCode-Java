@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
 
 public class TopKFrequent {
     public static void main(String[] args) {
@@ -14,7 +17,7 @@ public class TopKFrequent {
 
         Map<Integer, Integer> numsMaps = new HashMap<>();
 
-        for (Integer s : nums) {
+        for (int s : nums) {
             numsMaps.put(s, numsMaps.getOrDefault(s, 0) + 1);
         }
 
