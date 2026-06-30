@@ -26,5 +26,4 @@ public class productExceptSelf {
         }
         return res;
     }
-
 }
